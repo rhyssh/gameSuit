@@ -157,21 +157,86 @@ h1 {
 .area-komputer .info {
   background-color: white;
   position: absolute;
-  width: 100px;
-  height: 100px;
-  bottom: 0;
+  width: 200px;
+  height: 70px;
+  bottom: -40px;
   left: 0;
   right: 0;
   margin: auto;
-  margin-bottom: -20px;
+
+  /* margin-bottom: 10px; */
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.info p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
 }
 .area-komputer {
   position: relative;
   background-color: lightseagreen;
   height: 250px;
   margin-bottom: 10px;
+  border-radius: 20px 20px 0 0;
+}
+
+.area-komputer img {
+  padding-top: 3vh;
 }
 .area-player {
   background-color: lightslategray;
+  position: relative;
   height: 250px;
+  display: flex;
+  border-radius: 0 0 20px 20px;
+}
+
+.area-player ul {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 20px;
+  /* flex-wrap: wrap; */
+}
+.area-player ul li {
+  /* display: inline-flex; */
+  padding-left: 50%;
+  padding-top: 10%;
+}
+
+/* .area-player ul:last-child {
+  padding-bottom: 5%;
+} */
+
+.area-player .clenched-fist,
+.hand-peace,
+.hand {
+  transition: 0.3s;
+
+  top: 0;
+  cursor: pointer;
+}
+
+img {
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.clenched-fist:hover,
+.hand-peace:hover,
+.hand:hover,
+.active {
+  box-shadow: 0 0 10px 5px lightseagreen;
+}
+
+.clenched-fist:active,
+.hand-peace:active,
+.hand:active {
+  margin-top: 2px;
 }
